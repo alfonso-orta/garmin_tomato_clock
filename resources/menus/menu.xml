@@ -1,0 +1,5 @@
+<menu id="MainMenu">
+    <menu-item id="item_tomato" label="@Strings.menu_label_tomato" />
+    <menu-item id="item_short_break" label="@Strings.menu_label_short_break" />
+    <menu-item id="item_long_break" label="@Strings.menu_label_long_break" />
+</menu>

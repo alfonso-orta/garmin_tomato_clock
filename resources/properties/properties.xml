@@ -1,0 +1,5 @@
+<properties>
+	<property id="tomato_time" type="number">1500</property>
+	<property id="short_break_time" type="number">300</property>
+    <property id="long_break_time" type="number">900</property>
+</properties>

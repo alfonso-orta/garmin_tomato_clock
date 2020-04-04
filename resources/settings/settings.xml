@@ -1,0 +1,11 @@
+<settings>
+	<setting propertyKey="@Properties.tomato_time" title="@Strings.setting_tomato_time">
+		<settingConfig type="numeric" required="true" min="30" max="3600" errorMessage="@Strings.setting_error_message_tomato_time"/>
+	</setting>
+	<setting propertyKey="@Properties.short_break_time" title="@Strings.setting_short_break_time">
+		<settingConfig type="numeric" required="true" min="30" max="3600" errorMessage="@Strings.setting_error_message_short_break_time"/>
+	</setting>
+	<setting propertyKey="@Properties.long_break_time" title="@Strings.setting_long_break_time">
+		<settingConfig type="numeric" required="true" min="30" max="3600" errorMessage="@Strings.setting_error_message_long_break_time"/>
+	</setting>
+</settings>
