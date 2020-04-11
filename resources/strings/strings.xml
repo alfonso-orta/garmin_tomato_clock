@@ -6,9 +6,11 @@
     <string id="menu_label_long_break">Long Break</string>
     <string id="menu_label_reset">Reset</string>
     <string id="setting_tomato_time">Tomato time (seconds)</string>
-    <string id="setting_error_message_tomato_time">Tomato time must be a numeric between 30 and 3600 (seconds)</string>
+    <string id="setting_error_message_tomato_time">Tomato time must be a numeric between 300 and 3600 (seconds)</string>
     <string id="setting_short_break_time">Short Break time (seconds)</string>
-    <string id="setting_error_message_short_break_time">Short break time must be a numeric between 30 and 3600 (seconds)</string>
+    <string id="setting_error_message_short_break_time">Short break time must be a numeric between 300 and 3600 (seconds)</string>
     <string id="setting_long_break_time">Short Break time (seconds)</string>
-    <string id="setting_error_message_long_break_time">Long break time must be a numeric between 30 and 3600 (seconds)</string>
+    <string id="setting_error_message_long_break_time">Long break time must be a numeric between 300 and 3600 (seconds)</string>
+    <string id="timer_expired" scope="background">Your timer has expired!</string>
+    
 </strings>

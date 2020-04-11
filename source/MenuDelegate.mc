@@ -1,6 +1,11 @@
+//
+// Tomato Clock - Alfonso Orta - 2020
+//
+
 using Toybox.WatchUi;
 using Toybox.System;
 
+// The input handling delegate for the menu
 class MenuDelegate extends WatchUi.MenuInputDelegate {
 	var parentView;
 	
@@ -9,18 +14,19 @@ class MenuDelegate extends WatchUi.MenuInputDelegate {
         parentView = view;
     }
 
+	// This method is called when a item is selected
     function onMenuItem(item) {
         if (item == :item_tomato) {
-        	parentView.setCurrentPeriod(TomatoClockView.PERIOD_TOMATO);
-        	parentView.setStatusTimer(TomatoClockView.STATUS_TIMER_STOPPED);
+        	parentView.setCurrentPeriodAndTimerDuration(TomatoClockView.PERIOD_TOMATO);
+        	parentView.resetTimer();
         	parentView.stopTimer();
         } else if (item == :item_short_break) {
-        	parentView.setCurrentPeriod(TomatoClockView.PERIOD_SHORT_BREAK);
-        	parentView.setStatusTimer(TomatoClockView.STATUS_TIMER_STOPPED);
+        	parentView.setCurrentPeriodAndTimerDuration(TomatoClockView.PERIOD_SHORT_BREAK);
+        	parentView.resetTimer();
         	parentView.stopTimer();
 	    } else if (item == :item_long_break) {
-        	parentView.setCurrentPeriod(TomatoClockView.PERIOD_LONG_BREAK);
-        	parentView.setStatusTimer(TomatoClockView.STATUS_TIMER_STOPPED);
+        	parentView.setCurrentPeriodAndTimerDuration(TomatoClockView.PERIOD_LONG_BREAK);
+    		parentView.resetTimer();
         	parentView.stopTimer();
 	    }
     }
